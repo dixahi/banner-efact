@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Banner Efact</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+  <style>
+    #banner {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Banner Animado de Efact</h1>
+  <div id="banner"></div>
+
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('banner'), // Contenedor donde se mostrará
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'banerEfact.json' // Ruta al archivo JSON
+    });
+  </script>
+</body>
+</html>
